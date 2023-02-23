@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab3._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите возраст от 20 до 69 лет") ;
+            int n=Convert.ToInt32(Console.ReadLine());
+            int k = 0;
+            switch (n / 10 % 10)
+            {
+                case 2:
+                    Console.WriteLine( "двадцать " ); break;
+                case 3:
+                    Console.WriteLine( "тридцать "); break;
+                case 4:
+                    Console.WriteLine("сорок"); break;
+                case 5:
+                    Console.WriteLine("пятьдесят"); break;
+                case 6:
+                    Console.WriteLine("шестьдесят"); break;
+                default:
+                    Console.WriteLine("Ошибка"); k++; break;
+            }
+            int o = n % 10;
+            if (k==0) 
+            switch (o)
+            {
+                case 0 :
+                    Console.WriteLine("лет"); break;
+                case 1:
+                    Console.WriteLine("один год"); break;
+                    case 2: 
+                        Console.WriteLine("два года"); break;
+                    case 3:Console.WriteLine("три года"); break;
+                   case 4:
+                Console.WriteLine("четыре года"); break;
+                case 5: Console.WriteLine("пять лет"); break;
+                case 6: Console.WriteLine("шесть лет"); break;
+                case 7: Console.WriteLine("семь лет"); break;
+                case 8: Console.WriteLine("восемь лет"); break;
+                case 9:
+                    Console.WriteLine("девять лет"); break;
+            }
+            Console.ReadKey();
+            }
+        }
+}
